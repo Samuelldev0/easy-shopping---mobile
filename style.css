@@ -50,7 +50,7 @@ button{
     border-radius: 60px;
     font-weight: 400;
     font-size: 24px;
-    
+    cursor: pointer;
 }
 
 .box-bottom{
@@ -59,6 +59,91 @@ button{
     align-items: center;
     justify-content: center;
     background: rgba(93, 93, 125, 0.16);
+}
+
+/*desktop mode*/
+
+@media screen and (min-width:900px) {
+    body {
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+  }
+
+  .box-top{
+    width: 60vw;
+    height: 100vh;
+  }
+
+.box-bottom{
+    width: 40vw;
+    height: 100vh;
+}
+
+  .box-top {
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 80px;
+  }
+
+  h1 {
+    font-size: 70px;
+    line-height: 80px;
+    text-align: left;
+    width: 366px;
+  }
+
+  p {
+    font-size: 28px;
+    line-height: 48px;
+    text-align: left;
+    width: 540px;
+    max-width: 600px;
+  }
+
+  button {
+    font-size: 24px;
+    width: 300px;
+  }
+
+  button:hover{
+    background: #9498eaa8;
+  }
+
+  .header-mode-desktop {
+    display: block;
+    position: absolute;
+    top: 24px;
+    right: 58px;
+  }
+
+  .navbar {
+    display: flex;
+    gap: 40px;
+  }
+
+  .navbar a {
+    color: #5D5D7D;
+    font-size: 28px;
+  }
+
+  .navbar a:hover{
+    opacity: 40%;
+  }
+
+  .box-bottom {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box-bottom img {
+    width: 350px;
+    height: auto;
+    position: relative;
+    right: 36%;
+  }
+
 }
 
     
